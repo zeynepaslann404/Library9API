@@ -1,20 +1,34 @@
 Library9API
 
-Library9API is a comprehensive RESTful API designed for library management systems. This project enables effective management of library resources.
+This project is a comprehensive library management system designed to help librarians, employees, and members manage library resources effectively. The project includes features such as book management, member management, loan management, and more. It is built with a focus on scalability, security, and ease of use.
 
-Features:
-    Book Management: Add, update, and delete books.
-    Member Management: Register, update, and manage member statuses.
-    Loan Management: Borrow books, return, and calculate penalties.
-    User Roles: Different user roles (admin, employee, member) with specific permissions.
-    Security with JWT: User authentication and authorization.
+Technologies Used
 
+This project utilizes a variety of technologies to ensure a robust and efficient system. Below is a detailed explanation of the key technologies used:
 
-Technologies:
-    ASP.NET Core: For building the RESTful API.
-    Entity Framework Core: For database interactions.
-    SQL Server: For database management.
-    Swagger: For API documentation.
+ASP.NET Core
+
+ASP.NET Core is a cross-platform, high-performance framework for building modern, cloud-based, internet-connected applications. It is used to build the RESTful API that powers the LibraryAPI project.
+
+Entity Framework Core
+
+Entity Framework Core (EF Core) is an open-source ORM (Object-Relational Mapper) for .NET. It allows developers to work with a database using .NET objects, eliminating the need for most data-access code.
+
+Identity Framework
+
+The ASP.NET Core Identity framework is used to manage users, passwords, roles, and claims. It provides a complete, customizable authentication and authorization system. It integrates seamlessly with EF Core to handle the storage and retrieval of user-related data.
+
+JWT (JSON Web Tokens)
+
+JWT is used for securely transmitting information between parties as a JSON object. It is used for authentication and authorization in the LibraryAPI project.
+
+SQL Server
+
+SQL Server is a relational database management system developed by Microsoft. It is used as the database for the LibraryAPI project to store all the library data.
+
+Swagger
+
+Swagger is an open-source tool for documenting APIs. It provides a user-friendly interface to explore and test API endpoints. The LibraryAPI project includes Swagger for API documentation and testing.
     
 
 
@@ -30,6 +44,8 @@ Local Development:
 Apply the database migrations:
 
     bash
+    
+    dotnet ef migrations add Initial  
 
     dotnet ef database update
 
