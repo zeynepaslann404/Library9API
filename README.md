@@ -1,12 +1,14 @@
 Library9API
 
 Library9API is a comprehensive RESTful API designed for library management systems. This project enables effective management of library resources.
+
 Features:
     Book Management: Add, update, and delete books.
     Member Management: Register, update, and manage member statuses.
     Loan Management: Borrow books, return, and calculate penalties.
     User Roles: Different user roles (admin, employee, member) with specific permissions.
     Security with JWT: User authentication and authorization.
+
 
 Technologies:
     ASP.NET Core: For building the RESTful API.
