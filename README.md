@@ -23,44 +23,47 @@ Local Development:
 
     bash
 
-git clone https://github.com/yourusername/Library9API.git
+    git clone https://github.com/yourusername/Library9API.git
 
-Update the appsettings.json file.
+    Update the appsettings.json file.
+    
 Apply the database migrations:
 
-bash
+    bash
 
-dotnet ef database update
+    dotnet ef database update
 
 Start the application:
 
-bash
+    bash
 
-dotnet run
+    dotnet run
 
 API Usage
 Login
 
 Use the following endpoint for user login:
 
-   POST /api/authentication/login
+    POST /api/authentication/login
 
 Example JSON
 
 json
 
-{
+    {
     "email": "admin@admin.com",
     "password": "Admin1234!"
-}
+    }
 
 Key Endpoints
 
   Books
+  
         GET /api/books - Retrieve all books
         POST /api/books - Add a new book
 
   Members
+  
         GET /api/members - Retrieve all members
         POST /api/members - Add a new member
 
